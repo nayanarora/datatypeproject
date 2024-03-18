@@ -1,4 +1,3 @@
-# %%
 
 import pandas as pd
 
@@ -27,10 +26,11 @@ def infer_and_convert_data_types(df):
 df = pd.read_csv('sample_data.csv')
 print("Data types before inference:")
 print(df.dtypes)
+#print(df.info(), "\n")
 
 df = infer_and_convert_data_types(df)
 
 print("\nData types after inference:")
 print(df.dtypes)
 
-# %%
+#print(df.info(), "\n")
