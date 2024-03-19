@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path,include
 
 urlpatterns = [
-    #path('admin/', admin.site.urls),'
-    #path('', include('rhombus_frontend.urls')),
-    path('', include('apps.urls'))
+    path('admin/', admin.site.urls),
+    path('data/', include("apps.urls")),
+    #path('', include('apps.urls'))
 ]
